@@ -1,4 +1,4 @@
-public class Clothing {
+abstract class Clothing {
     public String brand;
     public double price;
     public String colour;
