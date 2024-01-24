@@ -2,7 +2,8 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class
+Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -16,7 +17,10 @@ public class Main {
         //System.out.printf("Your name %s\n", userName);
 
 
-        while(true) {
+        int myInt = Utils.getIntInput("Give me number!: ");
+
+        System.out.printf("Your input: %s", myInt);
+        /*while(true) {
             System.out.printf("Random number: %d \n(Press ENTER for another random number, Q to exit the program!)",
                     random.nextInt(0, 100)
             );
