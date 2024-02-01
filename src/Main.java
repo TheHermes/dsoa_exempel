@@ -11,15 +11,25 @@ Main {
         Random random = new Random();
 
 
+        //FileUtils.writeTextFile("Morjens", "hello.txt");
+
+        String fileCont = FileUtils.readTextFile("hello.txt");
+
+
+        System.out.println(fileCont);
+
+
+        Customer cust = new Customer(1000);
+
         //System.out.printf("Skriv: ");
 
         //String userName = scanner.nextLine();
         //System.out.printf("Your name %s\n", userName);
 
 
-        int myInt = Utils.getIntInput("Give me number!: ");
+        //int myInt = Utils.getIntInput("Give me number!: ");
 
-        System.out.printf("Your input: %s", myInt);
+        //System.out.printf("Your input: %s", myInt);
         /*while(true) {
             System.out.printf("Random number: %d \n(Press ENTER for another random number, Q to exit the program!)",
                     random.nextInt(0, 100)
