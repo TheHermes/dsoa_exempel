@@ -11,7 +11,15 @@ Main {
         String character1 = "Sonic";
         String character2 = "Shadow";
 
-        StringArray stringArray = new StringArray(videoGameCharacters);
+        Person person1 = new Person("Shadow");
+        Person person2 = new Person("Nelf", person1);
+        Person person3 = new Person("Sailer", person2);
+        Person current = person2;
+        while (current.next != null) {
+
+        }
+
+        /*StringArray stringArray = new StringArray(videoGameCharacters);
 
         System.out.printf("%d\n", stringArray.size());
         System.out.printf(stringArray.toString());
@@ -24,9 +32,10 @@ Main {
 
         stringArray.reverse();
 
-        System.out.printf("\n%s", stringArray.toString());
+        System.out.printf("\n%s", stringArray.toString());*/
 
         //new BigO();
+
 
 
     }

@@ -34,11 +34,9 @@ public class StringArray {
     }
 
     public void reverse() {
-        int j = 0;
         String[] b = new String[values.length];
-        for (int i = values.length-1; i >= 0; i--) {
-            b[j] = values[i];
-            j++;
+        for (int i = 0; i < values.length; i++) {
+            b[i] = values[values.length - 1 - i];
         }
         values = b;
     }
