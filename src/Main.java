@@ -46,14 +46,15 @@ Main {
         Scanner userInput = new Scanner(System.in);
 
         String[] weekDays = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
-        int today = 0;
+        int today = 2;
         LocalDate date = LocalDate.now();
 
 
-        System.out.printf("The day in 10 days is: %s", weekDays[today + 10 % weekDays.length]);
+        System.out.printf("The day in 10 days is: %s", weekDays[(today + 10) % weekDays.length]);
+        System.out.printf("\nThe day in 20 days is: %s", weekDays[(today + 20) % weekDays.length]);
         System.out.printf("\nToday is %s\nWhat day is it in: ", weekDays[today]);
         int userDay = userInput.nextInt();
-        System.out.printf("The day in %d days is %s", userDay,weekDays[userDay % weekDays.length]);
+        System.out.printf("The day in %d days is %s", userDay, weekDays[(today + userDay) % weekDays.length]);
 
 
         /*StringArray stringArray = new StringArray(videoGameCharacters);
