@@ -15,4 +15,22 @@ public class Utils {
 
         }
     }
+
+    public static int countdown(int n) {
+        System.out.print(n + " ");
+        if (n != 1) {
+            return countdown(n - 1);
+        } else return 0;
+
+
+    }
+
+    public static long pow(long a, long ex) {
+
+        if (ex != 0) {
+            return a * pow(a, ex - 1);
+        } else return 1;
+
+
+    }
 }
