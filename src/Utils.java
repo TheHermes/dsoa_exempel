@@ -18,7 +18,7 @@ public class Utils {
 
     public static int countdown(int n) {
         System.out.print(n + " ");
-        if (n != 1) {
+        if (n <= 1) {
             return countdown(n - 1);
         } else return 0;
 
